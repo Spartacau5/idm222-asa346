@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400");
+body {
+	background-color: #fff;
+	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	background-size: cover;
+} 
+strong {
+	font-weight: bolder;
+	color: #FFFFFF;
+} /* Custom Boldness */
+.leftblock {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	padding: 24px;
+	width: 300px;
+	margin: auto;
+}
+.rightblock {
+	background-image: linear-gradient(#ffffff, #eeeeee);
+	margin-top: -40px;
+	z-index: 10;
+	margin-left: 348px;
+}
+.title {
+	visibility: collapse;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: -10px;
+	color: #fff;
+}
+.header {
+	margin: 50px 0 20px 0;
+	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 32px;
+	color: #323232;
+}
+.blackheader {
+	padding-bottom: 16px;
+	margin: 20px 0 -20px 0;
+	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	color: #323232;
+}
+.whiteheader {
+	margin: 100px 0;
+	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 24px;
+	color: #ffffff;
+}
+.descriptor {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	color: #333333;
+	line-height: 24px;
+}
+.page {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 25px 100px;
+	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+.footer {
+	height: auto;
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+	color: #ffffff;
+	background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+	background-blend-mode: multiply;
+	transition-duration: .2s;
+	transition-property: box-shadow;
+}
+.center {
+	text-align: center;
+	justify-content: center;
+} /* To Center All the Panels */
+.logo {
+	display: flex;
+	justify-content: left;
+	align-content: left;
+	width: 90px;
+	height: 90px;
+	background-size: 90px 90px;
+	border: 1px solid;
+	box-shadow: 0 5px 10px #888888;
+	background-image: url('http://www.arpitahluwalia.com/Assets/Asset%201.png');
+}
+.btn {
+	display: block;
+	border-radius: 4px;
+	padding-top: 12px;
+	text-align: center;
+	padding-bottom: 12px;
+	font-size: 18px;
+	background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+	background-blend-mode: multiply;
+	transition-duration: .2s;
+	transition-property: box-shadow;
+} /* Resume Button */
+.btn2 {
+	display: block;
+	margin-top: 10px;
+	border-radius: 0px 0px 14px 14px;
+	padding-top: 12px;
+	text-align: right;
+	padding-bottom: 12px;
+	padding-right: 16px;
+	font-size: 16px;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+	transition-duration: .2s;
+	transition-property: box-shadow;
+} /* Icon Buttons */
+a .btn {
+	color: #ffffff;
+	text-decoration: none;
+}
+a {
+	color: #323232;
+	text-decoration: none;
+	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.card {
+	text-decoration: none;
+	margin: 2px 2px 10px 2px;
+	display: inline-block;
+	width: 280px;
+	height: auto;
+	border-radius: 14px;
+	transition: .2s;
+} /* Small Cards for Index */
+.opencard {
+	text-decoration: none;
+	margin: 20px 10px 10px 10px;
+	display: inline-block;
+	width: 95%;
+	height: 95%;
+	border-radius: 14px;
+	transition: .2s;
+} /* big Cards for Specific Pages */
+.opencard img {
+	width: 90%;
+	height: 90%;
+} /* To fit in uploaded project files */
+.black {
+	background-color: #000000;
+}
+.card:hover {
+	transform: scale3d(0.98, 0.98, 1);
+	border: 1px solid #ddd;
+} 
+.phto {
+	background-image: url('https://www.arpitahluwalia.com/Summit.jpg');
+	align-content: center;
+	background-size: cover;
+	color: #ffffff;
+	text-align: center;
+	background-position: center;
+} /* Custom Card for Photography */
+.card img {
+	width: 200px;
+	height: 200px;
+}
+.card p {
+	font-size: 14px;
+	margin: 2px 20px -5px 20px;
+	text-align: left;
+	line-height: 22px;
+}
+.insta {
+	margin: 17px;
+}
+.consilium {
+	background-image: linear-gradient(to top, #f83600 0%, #f9d423 100%);
+	color: #fff;
+}
+.nightscape {
+	background: #C9CCD3;
+	background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+	background-blend-mode: lighten;
+	color: #fff;
+}
+.drexelone {
+	background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+	color: #ffffff;
+}
+.gradient {
+	background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+	color: #ffffff;
+}
+.petlo {
+	background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+	color: #ffffff;
+}
+
+.video {
+	margin: 15px 50px;
+}
+.hvr-grow-shadow {
+	text-decoration: none;
+	background-color: #ffffff;
+	display: inline;
+	border: 1px solid #ddd;
+	margin: 4px;
+	padding: 2px;
+	border-radius: 32px;
+	color: #323232;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	font-size: 20px;
+	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-weight: 900;
+	display: inline-block;
+	vertical-align: middle;
+}
+@media only screen and (max-width: 812px) {
+	body {
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: 100vw auto;
+		margin: 0px;
+	}	
+	.title {
+		color: #ffffff;
+	}
+	.logo {
+		margin: auto;
+		display: flex;
+		align-content: center;
+	}
+	.descriptor {
+		font-size: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.page {
+		font-size: 16px;
+		text-align: left;
+		margin: 0px 30px;
+	}
+	.centerpage {
+		font-size: 16px;
+		text-align: center;
+		margin: 0px 30px;
+	}
+	.social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.header {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		padding-top: 20px;
+		font-size: 24px;
+	}
+	.blackheader {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 20px;
+	}
+	.leftblock {
+		padding-bottom: 70px;
+		position: relative;
+		width: auto;
+		height: auto;
+	}
+	.rightblock {
+		float: left;
+		margin-left: auto;
+	}
+	.center {
+		margin-top: -30px;
+		background-color: #FFFFFF;
+	}
+	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.card {
+		border-radius: 10px;
+		width: 90vw;
+		margin-right: 12px;
+		margin-left: 12px;
+		height: auto;
+		margin-bottom: 3vw;
+		box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.05);
+	}
+	.card img {
+		width: 80vw;
+		height: auto;
+	}
+	.opencard {
+		border-radius: 10px;
+		width: 90vw;
+		margin-right: 12px;
+		margin-left: 12px;
+		height: auto;
+		margin-bottom: 3vw;
+		margin-top: 10vw;
+		box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.05);
+	}
+	.opencard img {
+		width: 80vw;
+		height: auto;
+		margin: 10px 0px;
+	}
+	.card p {
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.btn2 {
+		border-radius: 0px 0px 10px 10px;
+		padding: 20px 28px 24px 20px;
+		font-size: 18px;
+	}
+	.insta {
+		margin: 15px;
+	}
+	.video {
+		display: flex;
+		text-align: center;
+		align-content: center;
+		margin: 0px 5px;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	.soundcloud {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50%;
+		width: auto;
+	}
