@@ -1,31 +1,42 @@
-@charset "utf-8";
-
-/* CSS Document */
-
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400");
+*{
+	border: none;
+}
+html{
+	font-size: 100%;
+	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
 body {
 	background-color: #fff;
-	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	background-size: cover;
 } 
+figure {
+	text-align: center;
+	margin: 0;
+}
 strong {
 	font-weight: bolder;
 	color: #FFFFFF;
-} /* Custom Boldness */
+}
 .leftblock {
 	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	padding: 24px;
-	width: 300px;
+	padding: 1.5rem;
+	width: 18.75rem;
 	margin: auto;
+	height: 100%;
 }
 .rightblock {
 	background-image: linear-gradient(#ffffff, #eeeeee);
-	margin-top: -40px;
+	margin-top: -30px;
 	z-index: 10;
 	margin-left: 348px;
+	text-align: center;
 }
 .title {
 	visibility: collapse;
@@ -34,49 +45,42 @@ strong {
 	margin-bottom: -10px;
 	color: #fff;
 }
+.social {
+	text-align: center;
+	margin-top: -20px;
+}
 .header {
-	margin: 50px 0 20px 0;
-	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	margin: 50px 0;
 	text-transform: uppercase;
+	text-align: center;
 	font-weight: bold;
 	font-size: 32px;
 	color: #323232;
 }
 .blackheader {
-	padding-bottom: 16px;
-	margin: 20px 0 -20px 0;
-	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 18px;
 	color: #323232;
+	text-align: center;
 }
 .whiteheader {
-	margin: 100px 0;
-	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	margin: 5.55rem 0;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 1.5rem;
 	color: #ffffff;
 }
 .descriptor {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	color: #333333;
 	line-height: 24px;
 }
-.page {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin: 25px 100px;
-	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	text-align: left;
+.whitedescriptor { 
+	color: #ffffff;
 }
 .footer {
+	position: inherit;
 	height: auto;
 	width: 100%;
 	text-align: center;
@@ -87,20 +91,8 @@ strong {
 	transition-duration: .2s;
 	transition-property: box-shadow;
 }
-.center {
-	text-align: center;
-	justify-content: center;
-} /* To Center All the Panels */
-.logo {
-	display: flex;
-	justify-content: left;
-	align-content: left;
-	width: 90px;
-	height: 90px;
-	background-size: 90px 90px;
-	border: 1px solid;
-	box-shadow: 0 5px 10px #888888;
-	background-image: url('http://www.arpitahluwalia.com/Assets/Asset%201.png');
+#logo {
+	width: 50%;
 }
 .btn {
 	display: block;
@@ -136,28 +128,53 @@ a {
 	text-decoration: none;
 	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
+
 .card {
 	text-decoration: none;
-	margin: 2px 2px 10px 2px;
+	margin:2px 2px 10px 2px;
 	display: inline-block;
-	width: 280px;
+	width: 17.5rem;
 	height: auto;
 	border-radius: 14px;
 	transition: .2s;
 } /* Small Cards for Index */
 .opencard {
 	text-decoration: none;
-	margin: 20px 10px 10px 10px;
-	display: inline-block;
-	width: 95%;
-	height: 95%;
 	border-radius: 14px;
 	transition: .2s;
-} /* big Cards for Specific Pages */
-.opencard img {
+} /* big cards for in-line pages */
+.openimage {
+	text-align: center;
 	width: 90%;
-	height: 90%;
-} /* To fit in uploaded project files */
+	height: auto;
+	text-decoration: none;
+	border-radius: 14px;
+	transition: .2s;
+	margin: 5% 0;
+}
+.openimagemobile {
+	text-align: center;
+	width: 20%;
+	height: auto;
+	text-decoration: none;
+	border-radius: 14px;
+	transition: .2s;
+	margin: 0 20px;
+}
+.openimagetablet {
+	width: 70%;
+	height: auto;
+	text-decoration: none;
+	border-radius: 14px;
+	transition: .2s;
+	margin-top: 5%;
+} 
+.eaglesimg {
+	width: 60%;
+	height: auto;
+	padding: 2rem 0;
+}
+/* To fit in uploaded project files */
 .black {
 	background-color: #000000;
 }
@@ -167,15 +184,16 @@ a {
 } 
 .phto {
 	background-image: url('https://www.arpitahluwalia.com/Summit.jpg');
-	align-content: center;
 	background-size: cover;
 	color: #ffffff;
 	text-align: center;
 	background-position: center;
 } /* Custom Card for Photography */
-.card img {
-	width: 200px;
-	height: 200px;
+.img {
+	width: 60%;
+	height: auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 .card p {
 	font-size: 14px;
@@ -189,6 +207,7 @@ a {
 .consilium {
 	background-image: linear-gradient(to top, #f83600 0%, #f9d423 100%);
 	color: #fff;
+	text-align: center;
 }
 .nightscape {
 	background: #C9CCD3;
@@ -200,6 +219,10 @@ a {
 	background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
 	color: #ffffff;
 }
+.scripting {
+	background: linear-gradient(to top, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #ffffff;
+}
 .gradient {
 	background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
 	color: #ffffff;
@@ -208,28 +231,58 @@ a {
 	background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 	color: #ffffff;
 }
+.triangle {
+	background: linear-gradient(to top, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #ffffff;
+	text-align: center;
+}
 
 .video {
-	margin: 15px 50px;
+	padding: 15%;
 }
 .hvr-grow-shadow {
 	text-decoration: none;
 	background-color: #ffffff;
-	display: inline;
 	border: 1px solid #ddd;
 	margin: 4px;
 	padding: 2px;
+	height: 36px;
+	width: 36px;
 	border-radius: 32px;
 	color: #323232;
-	width: 36px;
-	height: 36px;
 	text-align: center;
-	font-size: 20px;
-	font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-weight: 900;
 	display: inline-block;
 	vertical-align: middle;
 }
+.hvr-grow-shadow-adj {
+	text-decoration: none;
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	margin: 20px 0 0 -10px;
+	padding: 2px;
+	height: 36px;
+	width: 36px;
+	border-radius: 32px;
+	color: #323232;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+.hvr-grow-shadow-adj-resume {
+	text-decoration: none;
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	margin: 20px 0 0 20px;
+	padding: 2px;
+	height: 36px;
+	width: 36px;
+	border-radius: 32px;
+	color: #323232;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 @media only screen and (max-width: 812px) {
 	body {
 		background-position: bottom;
@@ -240,17 +293,15 @@ a {
 	.title {
 		color: #ffffff;
 	}
-	.logo {
+	#logo {
 		margin: auto;
-		display: flex;
-		align-content: center;
+		width: 30vw;
+		height: auto;
 	}
 	.descriptor {
-		font-size: 16px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		font-size: 1rem;
 		text-align: center;
+		margin: 1.5rem 2rem;
 	}
 	.page {
 		font-size: 16px;
@@ -263,22 +314,15 @@ a {
 		margin: 0px 30px;
 	}
 	.social {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		text-align: center;
 	}
 	.header {
-		display: flex;
-		justify-content: center;
-		align-content: center;
 		padding-top: 20px;
 		font-size: 24px;
 	}
 	.blackheader {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding-top: 20px;
+		text-align: center;
+		font-size: 1.25rem;
 	}
 	.leftblock {
 		padding-bottom: 70px;
@@ -343,12 +387,13 @@ a {
 		margin: 15px;
 	}
 	.video {
-		display: flex;
+		display: block;
 		text-align: center;
-		align-content: center;
-		margin: 0px 5px;
-		max-height: 100%;
-		max-width: 100%;
+		width: 50%;
+		margin: 50px;
+	}
+	.player {
+		width: 50%;
 	}
 	.wrapper {
 		display: flex;
@@ -361,3 +406,140 @@ a {
 		height: 50%;
 		width: auto;
 	}
+		
+	.btn {
+		width: 50%;
+		margin: auto;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+body {
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: 100vw auto;
+		margin: 0px;
+	}	
+	.title {
+		color: #ffffff;
+	}
+	#logo {
+		margin: auto;
+		width: 30vw;
+		height: auto;
+	}
+	.descriptor {
+		font-size: 1rem;
+		text-align: center;
+		margin: 1.5rem 2rem;
+	}
+	.page {
+		font-size: 16px;
+		text-align: left;
+		margin: 0px 30px;
+	}
+	.centerpage {
+		font-size: 16px;
+		text-align: center;
+		margin: 0px 30px;
+	}
+	.social {
+		text-align: center;
+	}
+	.header {
+		padding-top: 20px;
+		font-size: 24px;
+	}
+	.blackheader {
+		text-align: center;
+		font-size: 1.25rem;
+	}
+	.leftblock {
+		padding-bottom: 70px;
+		position: relative;
+		width: auto;
+		height: auto;
+	}
+	.rightblock {
+		float: left;
+		margin-left: auto;
+	}
+	.center {
+		margin-top: -30px;
+		background-color: #FFFFFF;
+	}
+	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.card {
+		border-radius: 10px;
+		width: 90vw;
+		margin-right: 12px;
+		margin-left: 12px;
+		height: auto;
+		margin-bottom: 3vw;
+		box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.05);
+	}
+	.card img {
+		width: 80vw;
+		height: auto;
+	}
+	.opencard {
+		border-radius: 10px;
+		width: 90vw;
+		margin-right: 12px;
+		margin-left: 12px;
+		height: auto;
+		margin-bottom: 3vw;
+		margin-top: 10vw;
+		box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.05);
+	}
+	.opencard img {
+		width: 80vw;
+		height: auto;
+		margin: 10px 0px;
+	}
+	.card p {
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.btn2 {
+		border-radius: 0px 0px 10px 10px;
+		padding: 20px 28px 24px 20px;
+		font-size: 18px;
+	}
+	.insta {
+		margin: 15px;
+	}
+	.video {
+		display: block;
+		text-align: center;
+		width: 50%;
+		margin: 50px;
+	}
+	.player {
+		width: 50%;
+	}
+	.wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	.soundcloud {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50%;
+		width: auto;
+	}
+		
+	.btn {
+		width: 50%;
+		margin: auto;
+	}
+}
