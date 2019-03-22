@@ -17,6 +17,9 @@ figure {
 	text-align: center;
 	margin: 0;
 }
+h3 { 
+	padding: .4rem 0;
+}
 strong {
 	font-weight: bolder;
 	color: #FFFFFF;
@@ -283,6 +286,8 @@ a {
 	vertical-align: middle;
 }
 
+/* Mobile Queries */
+
 @media only screen and (max-width: 812px) {
 	body {
 		background-position: bottom;
@@ -333,15 +338,14 @@ a {
 	.rightblock {
 		float: left;
 		margin-left: auto;
+		margin-bottom: 1rem;
 	}
 	.center {
 		margin-top: -30px;
 		background-color: #FFFFFF;
 	}
 	.footer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		display: block;
 		text-align: center;
 	}
 	.card {
@@ -354,7 +358,7 @@ a {
 		box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.05);
 	}
 	.card img {
-		width: 80vw;
+		width: 60vw;
 		height: auto;
 	}
 	.opencard {
@@ -413,6 +417,7 @@ a {
 	}
 }
 
+/* Tablet Queries */ 
 
 @media (min-width: 768px) and (max-width: 1024px) {
 body {
@@ -425,24 +430,14 @@ body {
 		color: #ffffff;
 	}
 	#logo {
-		margin: auto;
-		width: 30vw;
+		margin-top: 1rem;
+		width: 20vw;
 		height: auto;
 	}
 	.descriptor {
 		font-size: 1rem;
 		text-align: center;
-		margin: 1.5rem 2rem;
-	}
-	.page {
-		font-size: 16px;
-		text-align: left;
-		margin: 0px 30px;
-	}
-	.centerpage {
-		font-size: 16px;
-		text-align: center;
-		margin: 0px 30px;
+		margin: 1.5rem 1rem;
 	}
 	.social {
 		text-align: center;
@@ -456,28 +451,34 @@ body {
 		font-size: 1.25rem;
 	}
 	.leftblock {
-		padding-bottom: 70px;
-		position: relative;
-		width: auto;
-		height: auto;
-	}
-	.rightblock {
-		float: left;
-		margin-left: auto;
-	}
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	padding: 1.5rem;
+	width: 18.75rem;
+	margin: auto;
+	height: 100%;
+}
+.rightblock {
+	background-image: linear-gradient(#ffffff, #eeeeee);
+	margin-top: -30px;
+	z-index: 10;
+	margin-left: 348px;
+	text-align: center;
+	overflow-y: scroll;
+}
 	.center {
 		margin-top: -30px;
 		background-color: #FFFFFF;
 	}
 	.footer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		display: block;
 		text-align: center;
 	}
 	.card {
 		border-radius: 10px;
-		width: 90vw;
+		width: 60vw;
 		margin-right: 12px;
 		margin-left: 12px;
 		height: auto;
@@ -485,12 +486,12 @@ body {
 		box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.05);
 	}
 	.card img {
-		width: 80vw;
+		width: 40vw;
 		height: auto;
 	}
 	.opencard {
 		border-radius: 10px;
-		width: 90vw;
+		width: 60vw;
 		margin-right: 12px;
 		margin-left: 12px;
 		height: auto;
@@ -499,10 +500,32 @@ body {
 		box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.05);
 	}
 	.opencard img {
-		width: 80vw;
+		width: 55vw;
 		height: auto;
 		margin: 10px 0px;
 	}
+	.openimagemobile {
+	text-align: center;
+	width: 20vw;
+	height: auto;
+	text-decoration: none;
+	border-radius: 14px;
+	transition: .2s;
+	margin: 0 20px;
+}
+.openimagetablet {
+	width: 40vw;
+	height: auto;
+	text-decoration: none;
+	border-radius: 14px;
+	transition: .2s;
+	margin-top: 5%;
+} 
+.eaglesimg {
+	width: 50vw;
+	height: auto;
+	padding: 2rem 0;
+}
 	.card p {
 		margin-left: 20px;
 		margin-right: 20px;
@@ -539,7 +562,7 @@ body {
 	}
 		
 	.btn {
-		width: 50%;
+		width: 75%;
 		margin: auto;
 	}
 }
