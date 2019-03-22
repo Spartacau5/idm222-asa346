@@ -288,7 +288,7 @@ a {
 
 /* Mobile Queries */
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 767px) {
 	body {
 		background-position: bottom;
 		background-repeat: no-repeat;
